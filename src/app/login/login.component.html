@@ -1,0 +1,25 @@
+<body>
+<div class="wrapper">
+
+    <form class="form-signin" [formGroup]="messageForm" (ngSubmit)="onSubmit()">       
+      <h2 class="form-signin-heading">Please login</h2>
+
+<label>
+      UserName:
+            <input type="text" class="form-control" placeholder="Username" [(ngModel)]="username" name="username" formControlName="username" required>
+			 <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
+        <div *ngIf="messageForm.controls.username.errors.required">Your UserName is required</div>
+      </div>
+    </label>
+	<label>
+      Password:
+           <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password" type="password" name="password" formControlName="password" required>
+     <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
+        <div *ngIf="messageForm.controls.password.errors.required">Your Password is required</div>
+      </div>
+    </label>
+	 <!--<mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>-->
+     <button (click)="login()" color="primary" class="btn btn-lg btn-primary btn-block">Login</button>
+	 </form>
+	 </div>
+	 </body>

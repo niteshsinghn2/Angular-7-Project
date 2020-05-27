@@ -1,0 +1,6 @@
+[
+{"id": "1", "firstName": "Dhiraj", "lastName": "Ray", "email": "dhiraj@gmail.com","text":"Edit","Selected":false,"editMode":true},
+{"id": "2", "firstName": "Tom", "lastName": "Jac", "email": "Tom@gmail.com","text":"Edit","Selected":false,"editMode":true},
+{"id": "3", "firstName": "Hary", "lastName": "Pan", "email": "hary@gmail.com","text":"Edit","Selected":false,"editMode":true},
+{"id": "4", "firstName": "praks", "lastName": "pb", "email": "praks@gmail.com","text":"Edit","Selected":false,"editMode":true}
+]
