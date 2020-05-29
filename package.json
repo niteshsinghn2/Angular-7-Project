@@ -28,10 +28,13 @@
     "jquery": "^3.3.1",
     "jszip": "^3.2.2",
     "jszip-utils": "^0.1.0",
+    "lodash": "^4.17.15",
+    "lodash.mergewith": "^4.6.2",
     "ngx-pagination": "^3.2.1",
     "ngx-perfect-scrollbar": "^8.0.0",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.5.1",
+    "set-value": "^3.0.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
