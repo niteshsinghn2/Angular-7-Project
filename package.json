@@ -33,7 +33,7 @@
     "jszip": "^3.2.2",
     "jszip-utils": "^0.1.0",
     "kind-of": "^6.0.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lodash.mergewith": "^4.6.2",
     "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
