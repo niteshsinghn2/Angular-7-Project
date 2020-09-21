@@ -9,6 +9,7 @@ import { saveAs } from "file-saver";
 import * as JSZip from 'jszip';
 import * as JSZipUtils from 'jszip-utils';
 import {HttpErrorResponse} from "@angular/common/http";
+import { AuthenticationService } from '../_service/authentication.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -27,7 +28,7 @@ getReport:any;
 editMode: boolean;
 clicked = false;
 private newUser:any = {};
-constructor(private httpService: HttpClient,private router: Router) {
+constructor(private httpService: HttpClient,private router: Router, private authenticationService: AuthenticationService) {
 }
  
 filterChanged(selectedValue: String){
@@ -134,7 +135,8 @@ zipFile.generateAsync({type:'blob'}).then((content) => {
 	  );
 	  
   }
-logOut() : void {
+logOut(){
+	this.authenticationService.logOut();
      this.router.navigate([""]);
     
   }

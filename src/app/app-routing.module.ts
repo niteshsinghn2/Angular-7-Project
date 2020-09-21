@@ -6,9 +6,10 @@ import { LoginComponent } from './login/login.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { ContactComponent } from './contact/contact.component';
 import { ModalComponent } from './modal/modal.component';
+import { AuthGuard } from './_service/auth-guard.service';
 const routes: Routes = [
 { path: 'login', component: LoginComponent },
- {path:'dashboard', component:DashboardComponent},
+ {path:'dashboard', component:DashboardComponent,canActivate: [AuthGuard]},
  {path:'about', component:AboutComponent},
  {path:'heroes', component:HeroesComponent},
  {path:'contact', component:ContactComponent},

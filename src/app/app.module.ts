@@ -16,6 +16,7 @@ import { HeroService } from './hero.service';
 import { ContactComponent } from './contact/contact.component';
 import { ModalModule } from 'angular-custom-modal';
 import { ModalComponent } from './modal/modal.component';
+import { AuthenticationService } from './_service/authentication.service';
 //import {HttpModule} from '@angular/http';
 //import { SearchPipe } from './search.pipe';
 
@@ -39,7 +40,7 @@ import { ModalComponent } from './modal/modal.component';
 	HttpClientModule,
 	ModalModule
   ],
-  providers: [HeroService],
+  providers: [HeroService,AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
